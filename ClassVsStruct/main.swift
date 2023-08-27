@@ -112,8 +112,20 @@ class Carro {
     }
 }
 
-var carro: Carro = Carro(modelo: "Chevette", ano: 1989)
-print(carro.printCarro())
+var carro1: Carro = Carro(modelo: "Chevette", ano: 1989)
+print(carro1.printCarro())
+
+var carro2: Carro = Carro(modelo: "Fusca", ano: 2000)
+print(carro2.printCarro())
+
+var carro3: Carro = carro1
+carro3.printCarro()
+
+carro3.modelo = "Corsa"
+carro3.ano = 2002
+
+carro3.printCarro()
+carro1.printCarro()
 
 // ---------------------------------------------------------------------------
 
